@@ -2,6 +2,9 @@ class Car {
     Integer id;
     String license;
     String driver;
-    Integer passengenger;
+    Integer passenger;
 
+    void printDataCar() {
+        System.out.println("Lincense " + license + " Driver: " + driver);
+    }
 }
