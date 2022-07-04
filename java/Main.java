@@ -3,7 +3,7 @@ class Main {
         System.out.println("hola mundo");
 
         UberX uberX = new UberX("AMQ123", new Account("Andres Herrera ", "AND324"), "Chevrolet", "Sonic");
-        uberX.passenger = 4;
+        uberX.setPassenger(4);
         uberX.printDataCar();
 
         /*
