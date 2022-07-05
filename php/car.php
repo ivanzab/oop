@@ -1,5 +1,6 @@
 <?php
 require_once('account.php');
+require_once('uberX.php');
 class Car
 {
     public $id;
@@ -19,6 +20,7 @@ class Car
         Licencia: $this->license
         Driver: {$this->driver->name} 
         Número de pasajeros: $this->passenger
+       
         
         ";
     }
