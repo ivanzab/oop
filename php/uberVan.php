@@ -1,6 +1,6 @@
 <?php
 require_once('car.php');
-class UberBlack extends Car
+class UberVan extends Car
 {
     public $typeCarAccepted;
     public $seatsMaterial;
@@ -11,4 +11,14 @@ class UberBlack extends Car
         $this->typeCarAccepted = $typeCarAccepted;
         $this->seatsMaterial = $seatsMaterial;
     }
+
+    public function setPassenger($passenger)
+    {
+        if ($passenger == 6) {
+            $this->passenger = $passenger;
+        } else {
+            echo "Necesitas asignar 6 pasajeros";
+        }
+    }
+    //aca en setPassenger vemos un ejemplo claro de polimorfismo
 }
